@@ -1,0 +1,9 @@
+version: 2
+sources:
+  - name: public
+    schema: public
+    tables:
+      - name: maventech_accounts
+      - name: maventech_sales_teams
+      - name: maventech_products
+      - name: maventech_sales_pipeline
