@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: dim_accounts
+    columns:
+      - name: account_key
+        tests: [not_null, unique]
+      - name: account
+        tests: [not_null]
+
+  - name: dim_products
+    columns:
+      - name: product_key
+        tests: [not_null, unique]
+      - name: product
+        tests: [not_null]
+
+  - name: dim_sales_teams
+    columns:
+      - name: sales_agent_key
+        tests: [not_null, unique]
+      - name: sales_agent
+        tests: [not_null]
+      
+  - name: fact_sales_pipeline
+    description: >
+      Taxi trips corresponding to both service zones (Green and yellow).
+      The table contains records where both pickup and dropoff locations are valid and known zones. 
+      Each record corresponds to a trip uniquely identified by tripid. 
+    columns:
+      - name: opportunity_id
+        tests: [not_null, unique]
