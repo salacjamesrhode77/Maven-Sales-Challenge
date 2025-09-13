@@ -7,3 +7,5 @@ select
   {{ dbt_utils.generate_surrogate_key(['product']) }} as product_key,  -- surrogate
   product, series, sales_price
 from base
+
+
