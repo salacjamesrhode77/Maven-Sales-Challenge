@@ -34,8 +34,11 @@ models:
     staging:
       +schema: staging
       +materialized: view
+
     marts:
-      +enabled: false
+      +enabled: false      # disables the parent 'marts' folder to prevent duplicates
       core:
+        +enabled: true     # only enable the 'core' subfolder
         +schema: marts
         +materialized: table
+
