@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: maventech
+    database: mavensales_db
+    schema: public
+    tables:
+      - name: maventech_accounts
+        description: "Raw account data from MavenTech CRM"
+      - name: maventech_products
+        description: "Raw product data from MavenTech CRM"
+      - name: maventech_sales_teams
+        description: "Raw sales team data from MavenTech CRM"
+      - name: maventech_sales_pipeline
+        description: "Raw sales opportunity data from MavenTech CRM"
