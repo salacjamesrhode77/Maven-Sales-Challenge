@@ -104,3 +104,59 @@ https://docs.getdbt.com/docs/configure-your-profile
 [0m18:56:49.012512 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ED27908770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ED276B4DD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ED2749E7A0>]}
 [0m18:56:49.012911 [debug] [MainThread]: Flushing usage events
 [0m18:56:50.983004 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:50:06.134785 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 21:50:06.252354 | cfee320a-7d0c-4f14-9e6b-9087d2d07676 ==============================
+[0m21:50:06.252354 [info ] [MainThread]: Running with dbt=1.10.11
+[0m21:50:06.253345 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'version_check': 'True', 'invocation_command': 'dbt debug', 'log_format': 'default', 'warn_error': 'None', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'use_experimental_parser': 'False', 'empty': 'None', 'printer_width': '80', 'quiet': 'False', 'log_path': 'logs', 'indirect_selection': 'eager', 'write_json': 'True', 'static_parser': 'True', 'profiles_dir': 'C:\\Users\\Administrator\\.dbt'}
+[0m21:50:06.275256 [info ] [MainThread]: dbt version: 1.10.11
+[0m21:50:06.276286 [info ] [MainThread]: python version: 3.13.5
+[0m21:50:06.277072 [info ] [MainThread]: python path: C:\Users\Administrator\LocalMachine\python.exe
+[0m21:50:06.277684 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m21:50:06.619556 [info ] [MainThread]: Using profiles dir at C:\Users\Administrator\.dbt
+[0m21:50:06.620759 [info ] [MainThread]: Using profiles.yml file at C:\Users\Administrator\.dbt\profiles.yml
+[0m21:50:06.621524 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Administrator\Python-Virtual-Environments\MavenTech_Sales_Dashboard\dbt_project.yml
+[0m21:50:06.622953 [info ] [MainThread]: adapter type: postgres
+[0m21:50:06.623807 [info ] [MainThread]: adapter version: 1.9.1
+[0m21:50:06.624621 [info ] [MainThread]: Configuration:
+[0m21:50:06.625294 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m21:50:06.625833 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m21:50:06.626284 [info ] [MainThread]: Required dependencies:
+[0m21:50:06.626740 [debug] [MainThread]: Executing "git --help"
+[0m21:50:06.650283 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m21:50:06.650796 [debug] [MainThread]: STDERR: "b''"
+[0m21:50:06.651228 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m21:50:06.651923 [info ] [MainThread]: Connection:
+[0m21:50:06.652500 [info ] [MainThread]:   host: 127.0.0.1
+[0m21:50:06.653104 [info ] [MainThread]:   port: 5432
+[0m21:50:06.653663 [info ] [MainThread]:   user: maventech
+[0m21:50:06.654226 [info ] [MainThread]:   database: mavensales_db
+[0m21:50:06.654783 [info ] [MainThread]:   schema: analysis
+[0m21:50:06.655269 [info ] [MainThread]:   connect_timeout: 10
+[0m21:50:06.655737 [info ] [MainThread]:   role: None
+[0m21:50:06.656235 [info ] [MainThread]:   search_path: None
+[0m21:50:06.656714 [info ] [MainThread]:   keepalives_idle: 0
+[0m21:50:06.657187 [info ] [MainThread]:   sslmode: None
+[0m21:50:06.657652 [info ] [MainThread]:   sslcert: None
+[0m21:50:06.658190 [info ] [MainThread]:   sslkey: None
+[0m21:50:06.658640 [info ] [MainThread]:   sslrootcert: None
+[0m21:50:06.659179 [info ] [MainThread]:   application_name: dbt
+[0m21:50:06.659689 [info ] [MainThread]:   retries: 1
+[0m21:50:06.660412 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m21:50:07.131924 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m21:50:10.895271 [debug] [MainThread]: Using postgres connection "debug"
+[0m21:50:10.896031 [debug] [MainThread]: On debug: select 1 as id
+[0m21:50:10.896426 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:50:11.367440 [debug] [MainThread]: SQL status: SELECT 1 in 0.471 seconds
+[0m21:50:11.370129 [debug] [MainThread]: On debug: Close
+[0m21:50:11.370565 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m21:50:11.371695 [info ] [MainThread]: [31m1 check failed:[0m
+[0m21:50:11.372626 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\Administrator\Python-Virtual-Environments\MavenTech_Sales_Dashboard\dbt_project.yml> not found
+
+[0m21:50:11.373643 [debug] [MainThread]: Command `dbt debug` failed at 21:50:11.373515 after 5.33 seconds
+[0m21:50:11.374019 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m21:50:11.374757 [debug] [MainThread]: Flushing usage events
