@@ -36,9 +36,7 @@ models:
       +materialized: view
 
     marts:
-      +enabled: false      # disables the parent 'marts' folder to prevent duplicates
-      core:
-        +enabled: true     # only enable the 'core' subfolder
-        +schema: marts
-        +materialized: table
+      +enabled: true     # only enable the 'core' subfolder
+      +schema: marts
+      +materialized: table
 
