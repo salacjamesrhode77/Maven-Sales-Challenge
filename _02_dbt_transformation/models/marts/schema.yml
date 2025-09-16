@@ -60,3 +60,12 @@ models:
               arguments:
                 to: ref('dim_salesteams')
                 field: sales_agent_key
+
+      - name: date
+        description: "Date dimension covering the range of engage_date from staging_salespipeline"
+        tests:
+          - relationships:
+              arguments:
+              to: ref('dim_calendar')
+              field: date
+

@@ -33,12 +33,7 @@ select
   sp.deal_stage,
   sp.engage_date,
   sp.close_date,
-  sp.close_value,
-  case
-    when sp.close_date is not null and sp.engage_date is not null
-      then sp.close_date - sp.engage_date
-    else null
-  end as days_closed
+  sp.close_value
 from sp
 left join dst on sp.sales_agent = dst.sales_agent
 left join dp  on sp.product      = dp.product
