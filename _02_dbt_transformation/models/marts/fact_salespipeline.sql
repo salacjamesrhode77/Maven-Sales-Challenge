@@ -42,7 +42,7 @@ select
   dp.sales_price,
   case
     when sp.close_value is not null and sp.close_value > 0
-      then round(((dp.sales_price - sp.close_value) / dp.sales_price)/ 5)* 5
+      then round(((dp.sales_price - sp.close_value) / dp.sales_price)*100/ 5, 0)* 5/100
     else null
   end as price_deviation
 from sp
