@@ -20,3 +20,6 @@ After the dataset is loaded data is tranformed to marts via dbt
 
 Visulization
 Using Power BI data is visualized to answer the questions above
+
+Cummulative Weekly Sales Average
+Mulitple line charts represents the cummulative of weekly average sales (this is done for normalization of data and will no consider wether your team belongs in a densely populated region or not)
