@@ -11,12 +11,16 @@ Build an interactive dashboard for sales managers to:
 Initial Planning
 First to consider in creating the project is what kind of audience will be using the dashsboard, given sales manager will use the dashboard, first consideration is to make the dashboard simplier and sales managers can find insights at a glance
 
-
-STEP 1: Create an SQL database by spinning up PostgreSQL instance via CloudSQL
-
-STEP 2: Create a Virutal Machine Instance 
+STEP 1: Create a Virutal Machine Instance 
 1. Installing Docker and dependecies
 2. Data Ingestion with Kestra
 
-STEP 3: Do Transformation of database with dbt
+STEP 2: Create an SQL database by spinning up PostgreSQL instance via CloudSQL
+
+STEP 3: Connect Local Machine to database with running cloud-sql-proxy 
+
+STEP 4: Do Transformation of database with dbt
+1. Create a python virtual environment and install dbt core and database adapter
+2. Initialize dbt
+3. 
 
