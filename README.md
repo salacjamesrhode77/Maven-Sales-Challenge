@@ -12,14 +12,9 @@ Initial Planning
 First to consider in creating the project is what kind of audience will be using the dashsboard, given sales manager will use the dashboard, first consideration is to make the dashboard simplier and sales managers can find insights at a glance
 
 
-Extract
-The zipped dataset is directly extracted from the Maven Sales website, performed minor transformation and loaded into PostgeSQL instance spinned up in CloudSQL Google Cloud's fully managed relational database service
+STEP 1: Create an SQL database by spinning up PostgreSQL instance via CloudSQL
 
-Transform
-After the dataset is loaded data is tranformed to marts via dbt 
-
-Visulization
-Using Power BI data is visualized to answer the questions above
-
-Cummulative Weekly Sales Average
-Mulitple line charts represents the cummulative of weekly average sales (this is done for normalization of data and will no consider wether your team belongs in a densely populated region or not)
+STEP 2: Create a Virutal Machine Instance 
+1. Installing Docker and dependecies
+2. Data Ingestion with Kestra
+3. 
