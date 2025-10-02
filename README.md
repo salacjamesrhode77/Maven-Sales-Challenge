@@ -17,4 +17,6 @@ STEP 1: Create an SQL database by spinning up PostgreSQL instance via CloudSQL
 STEP 2: Create a Virutal Machine Instance 
 1. Installing Docker and dependecies
 2. Data Ingestion with Kestra
-3. 
+
+STEP 3: Do Transformation of database with dbt
+
